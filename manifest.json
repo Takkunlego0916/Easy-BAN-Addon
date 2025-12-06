@@ -1,0 +1,41 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Ban Addon",
+        "description": "プレイヤーをBANできるようになります。ベータAPIをオンにしてください",
+        "uuid": "f114e814-0b25-4f4f-b8fe-fa20cc0f9fdb",
+        "version": [
+            0,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            40
+        ]
+    },
+    "modules": [
+        {
+            "description": "GameTest module",
+            "type": "script",
+            "uuid": "1a379d81-afd0-4b81-8329-3f2dcfc6f1b7",
+            "version": [
+                0,
+                1,
+                0
+            ],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.1.0"
+        },
+        {
+            "module_name": "@minecraft/server-admin",
+            "version": "1.0.0-beta"
+        }
+    ]
+}
